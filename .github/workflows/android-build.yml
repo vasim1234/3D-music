@@ -24,9 +24,10 @@ jobs:
 
       - name: Install Dependencies & Build Web
         run: |
-          npm install
-          npx cap sync android
-
+         npm install
+          npm run build
+           npx cap sync android
+  
       - name: Build Android APK
         run: |
           cd android
